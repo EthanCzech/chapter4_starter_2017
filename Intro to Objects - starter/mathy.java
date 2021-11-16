@@ -47,21 +47,12 @@ public class mathy
         @return int sum of values
     */
 
-
-    public int add (int x, int y)
-    {
-        int z = x+y;
-        return z;
+    //public int add (int x, int y)
+    //end of add
 
 
-    }//end of add
-
-
-    public double add (double x,double y)
-    {
-
-        return x+y;
-    }
+    //public double add (double x,double y)
+    
 
     /**
             toString
