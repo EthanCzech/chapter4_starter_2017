@@ -20,7 +20,7 @@ public class ch4notes7_08
     
         System.out.println(solver.abs(-5));
         System.out.println(abs(-8));
-    
+        System.out.println(abs(-8 + 2));
     /**/
     }// end of main
     
@@ -29,7 +29,7 @@ public class ch4notes7_08
         @param int value
         @return absoulute value of number
     */
-    public static int abs (int x)
+    public static int abs (int x)//int x is a parameter
     {
         if (x < 0)
             x = -x;
