@@ -16,11 +16,17 @@ public class ch4notes7_08
     public static void main (String[] args)
     {
     
-        mathy solver = new mathy();
+        mathy solver = new mathy();//class and object
     
         System.out.println(solver.abs(-5));
         System.out.println(abs(-8));
-        System.out.println(abs(-8 + 2));
+        System.out.println(abs(-8) + 2);//overloading
+        System.out.println(abs(-3.14));
+        
+        
+        System.out.println(solver.add(-5, 5));
+        System.out.println(solver.add(4.4, 6.4));
+        
     /**/
     }// end of main
     
@@ -29,8 +35,9 @@ public class ch4notes7_08
         @param int value
         @return absoulute value of number
     */
-    public static int abs (int x)//int x is a parameter
-    {
+    public static int abs (int x)//int x is a parameter, int is a return type
+    {//abs is an identifier.
+        System.out.print("I");
         if (x < 0)
             x = -x;
     
@@ -39,11 +46,21 @@ public class ch4notes7_08
     }//end of abs
     
     /**
-        take the absoulute value of the number
+        returns the absoulute value of the number
         @param double value
-        @return absoulute value of number
+        @return absoulute value of double
     */
+    //method signature is abs(parameters)
+    //can't overload by changing return type
+    public static double abs (double x)//int x is a parameter, int is a return type
+    {//abs is an identifier.
+        System.out.print("D");
+        if (x < 0)
+            x = -x;
     
+        return x;
+    
+    }//end of abs
     
     
     

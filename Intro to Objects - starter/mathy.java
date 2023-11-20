@@ -8,7 +8,7 @@ public class mathy
     private int area=0;
 
     /**
-        default constructor - stubed in
+        default constructor has no parameters - stubed in
     */
     public mathy( )
     {
@@ -47,13 +47,54 @@ public class mathy
         @return int sum of values
     */
 
-    //public int add (int x, int y)
+    public int add (int x, int y)//adds int x and y
+    {
+      System.out.print("Add function");
+      int value = x + y;
+      
+      return value;
+    }
     //end of add
 
 
     //public double add (double x,double y)
-    
+    /**
+        two double parameters and adds them
+        @param 2 double values
+        @return double sum of values
+        */
+    public double add (double x, double y)//adds double x and y
+    {
+      System.out.print("Add function");
+      double value = x + y;
+      
+      return value;
+    }
 
+    
+    /**
+     * round method will return double to number of places
+     * @param double n, int places
+     * @return double rounded to places
+     */
+    public double round(double n, int p) 
+    {
+        
+        int hastags = 0;
+        for (int num = 0; num < p; num++)
+        {   hastags += 1; 
+            pattern = ###.
+        
+        
+        }
+        DecimalFormat decimalFormat = new DecimalFormat(pattern);
+        
+        
+        return roundedn;
+    }
+    
+    
+    
     /**
             toString
             message from Mathy class
