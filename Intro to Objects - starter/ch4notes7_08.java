@@ -17,15 +17,27 @@ public class ch4notes7_08
     {
     
         mathy solver = new mathy();//class and object
-    
-        System.out.println(solver.abs(-5));
-        System.out.println(abs(-8));
-        System.out.println(abs(-8) + 2);//overloading
-        System.out.println(abs(-3.14));
+        circle round = new circle(10);
+        //System.out.println(round);
+        //System.out.println(solver);//if you print an object, it will call the toString method
+        //round.radius = 5;
+        //System.out.print(round.radius);
+        System.out.println(round.calcCircumfrence());
         
         
-        System.out.println(solver.add(-5, 5));
-        System.out.println(solver.add(4.4, 6.4));
+        
+        //System.out.println(solver.abs(-5));
+        //System.out.println(abs(-8));
+       // System.out.println(abs(-8) + 2);//overloading
+        //System.out.println(abs(-3.14));
+        
+        
+        //System.out.println(solver.add(-5, 5));
+        //System.out.println(solver.add(4.4, 6.4));
+        
+        
+        
+        //System.out.println(solver.round(5.29873428764, 3));
         
     /**/
     }// end of main

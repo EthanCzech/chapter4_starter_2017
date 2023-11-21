@@ -80,15 +80,18 @@ public class mathy
     public double round(double n, int p) 
     {
         
-        int hastags = 0;
+        
+        String places = ".";
         for (int num = 0; num < p; num++)
-        {   hastags += 1; 
-            pattern = ###.
-        
-        
+        {   places += "#"; 
+            
         }
-        DecimalFormat decimalFormat = new DecimalFormat(pattern);
         
+        DecimalFormat Format = new DecimalFormat("#"+places);
+        String num = ""+n;
+        String stringnum = Format.format(num);
+        
+        double roundedn = Double.parseDouble(stringnum);
         
         return roundedn;
     }
