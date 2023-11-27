@@ -32,9 +32,11 @@ public class circle
     {
         //r is local to the circle constructor
         radius = r;
-      
-      
-      
+        circumfrence = calcCircumfrence();
+        System.out.println(circumfrence);
+        calcDiameter();
+        calcArea();
+        
     }
     
     /**
@@ -47,5 +49,59 @@ public class circle
         return 2 * PI * radius;
     
     
+    }
+    
+    /**
+     * calcDiameter
+     * @return is void so nothing is returned
+     * 
+     */
+    private void calcDiameter()
+    {
+        diameter = 2 * radius;
+    
+    
+    }
+    
+    /**
+     * calcArea
+     * calulates the area and sets area
+     */
+    private void calcArea()
+    { area = PI * radius * radius;
+    
+    
+    }
+    
+    
+    //-------------------------GETTERS----------------------------------------
+    
+    /**
+     * getArea
+     * @return double area
+     */
+    public double getArea()
+    {return area;
+    }
+    
+    /**
+     * getCircumfrence
+     * @return double circumfrence
+     */
+    public double getCircumfrence()
+    {return calcCircumfrence();
+    }
+    
+    /**
+     * toString -returns all private data in readable format
+     * @return String of radius, diameter, circumfrence and area
+     */
+    public String toString()
+    {String data = "radius: " + radius;
+     data += "\n diameter: " + diameter;
+     data += "\n circumfrence: " +  circumfrence;
+     data += "\n area: " + area;
+     
+     return data;
     }
 }

@@ -22,8 +22,7 @@ public class ch4notes7_08
         //System.out.println(solver);//if you print an object, it will call the toString method
         //round.radius = 5;
         //System.out.print(round.radius);
-        System.out.println(round.calcCircumfrence());
-        
+        System.out.println(round);
         
         
         //System.out.println(solver.abs(-5));
