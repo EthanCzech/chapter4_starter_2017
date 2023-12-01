@@ -1,12 +1,12 @@
 #BlueJ package file
-dependency1.from=ch4notes7_08
-dependency1.to=mathy
+dependency1.from=BoxCars
+dependency1.to=PairOfDice
 dependency1.type=UsesDependency
 dependency2.from=SnakeEyes
 dependency2.to=Die
 dependency2.type=UsesDependency
-dependency3.from=BoxCars
-dependency3.to=PairOfDice
+dependency3.from=ch4notes7_08
+dependency3.to=circle
 dependency3.type=UsesDependency
 editor.fx.0.height=739
 editor.fx.0.width=816

@@ -3,7 +3,6 @@
 //
 //  Represents a street address.
 //********************************************************************
-
 public class Address
 {
    private String streetAddress, city, state;
@@ -39,4 +38,24 @@ public class Address
 
       return result;
    }
+   
+   
+   
+   /**
+    * 
+    */
+   public boolean equals(Address address)
+   {
+       
+       String street = streetAddress.substring(streetAddress.indexOf(" "));
+       String street2 = address.streetAddress.substring(address.streetAddress.indexOf(" "));
+      
+       boolean x = street.equals(street2);
+       
+       return x;
+    
+    
+    }
+   
+   
 }

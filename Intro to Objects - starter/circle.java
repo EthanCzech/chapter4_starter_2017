@@ -73,6 +73,19 @@ public class circle
     
     }
     
+    /**
+     * equal method will compare this object to another
+     * and return true if radius equals other radius
+     * @param circle object
+     * @return boolean 
+     */
+    public boolean equals(circle obj)
+    {
+        //at this point this.radius is optional, no local radius
+        boolean x = radius == obj.radius;
+        return x;
+    }
+    
     
     //-------------------------GETTERS----------------------------------------
     

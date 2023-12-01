@@ -16,13 +16,23 @@ public class ch4notes7_08
     public static void main (String[] args)
     {
     
-        mathy solver = new mathy();//class and object
+        
+        
+        double x = 5.5;
+        double y = 9.2;
+        double sum = add(x, y);
+        System.out.println(sum +"-" + x +"-" + y);
+        //mathy solver = new mathy();//class and object
         circle round = new circle(10);
+        circle round3 = new circle(10);
+        System.out.println(round == round3);
+        System.out.println(round.equals(round3));
+        
         //System.out.println(round);
         //System.out.println(solver);//if you print an object, it will call the toString method
         //round.radius = 5;
         //System.out.print(round.radius);
-        System.out.println(round);
+        //System.out.println(round);
         
         
         //System.out.println(solver.abs(-5));
@@ -77,8 +87,13 @@ public class ch4notes7_08
     
     
     
-    //public static int add (int x, int y)
-
+    public static double add (double x, double y)
+    {
+     //passing by value, pass a copy of the value
+     double sum = x + y;
+     x = 100;
+     return sum;
+    }
 
 
 }// end of class

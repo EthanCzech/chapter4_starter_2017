@@ -8,4 +8,6 @@ comment2.text=\r\n\ \ \ \ \ \ \ \ take\ the\ absoulute\ value\ of\ the\ number\r
 comment3.params=x
 comment3.target=double\ abs(double)
 comment3.text=\r\n\ \ \ \ \ \ \ \ returns\ the\ absoulute\ value\ of\ the\ number\r\n\ \ \ \ \ \ \ \ @param\ double\ value\r\n\ \ \ \ \ \ \ \ @return\ absoulute\ value\ of\ double\r\n
-numComments=4
+comment4.params=x\ y
+comment4.target=double\ add(double,\ double)
+numComments=5
