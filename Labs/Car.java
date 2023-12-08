@@ -1,3 +1,4 @@
+import java.util.Random; 
 /**
 * Write a description of class Car here.
 *
@@ -29,14 +30,52 @@ public int milesToAdd(int milesAdded)
  return miles;
 }
 
-public boolean isFuelTankEmpty(double carFuelTankLevel)
-{if (carFuelTankLevel == 0)
+public boolean isFuelTankEmpty()
+{if (fuelTankLevel == 0)
     return true;
- else if (carFuelTankLevel > 0)
+ else if (fuelTankLevel > 0)
      return false;
  else 
      return false;
 }
+
+public double milesToFuelLevel(int miles)
+{fuelTankLevel = modifyFuelTankLevel(miles);
+    return fuelTankLevel;
+    
+ 
+}
+
+public double modifyFuelTankLevel(int Carmiles)
+{double number = (double)Carmiles/400;
+ fuelTankLevel = fuelTankLevel - (fuelTankLevel * number);
+ if (fuelTankLevel <= 0)
+     {fuelTankLevel = 0;}
+ return fuelTankLevel;
+}
+
+public String drive(int Carmiles)
+{fuelTankLevel = modifyFuelTankLevel(Carmiles);
+ String data = " ";
+ if (fuelTankLevel == 0)
+     { data = "The "+year+" "+model +"'s fuel tank is empty";}
+ else
+     { data = "The "+year+" "+model+" drove "+ Carmiles + "miles, for a total mileage of "+miles+ " and a fuel level of " + fuelTankLevel + "%."; }
+ return data;    
+}
+
+public String drive()
+{fuelTankLevel = milesToFuelLevel(miles);
+ String data = " ";
+ if (fuelTankLevel == 0)
+     { data = "The "+year+" "+model +"'s fuel tank is empty";}
+ else
+     { data = "The "+year+" "+model+" drove "+ Carmiles + ", for a total mileage of "+miles+ " and a fuel level of " + fuelTankLevel + "%."; }
+ return data;   
+ 
+}
+
+
 
 public int getYear()
 {return year;
