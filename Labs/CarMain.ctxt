@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=CarMain
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ CarMain\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Main\ for\ driving\ the\ car\ objects\r\n\r\n\ Ethan\ Czech\r\n\ 12/11\r\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
 comment2.params=mine
@@ -8,8 +8,8 @@ comment2.target=java.lang.String\ getterTest(Car)
 comment2.text=\r\n\ Prints\ out\ the\ information\ for\ each\ getter\ method\r\n
 comment3.params=mine\ miles
 comment3.target=int\ addMilesTest(Car,\ int)
-comment3.text=\r\n\ Takes\ a\ car\ and\ adds\ given\ miles\r\n\ @param\r\n
+comment3.text=\r\n\ Takes\ a\ car\ and\ adds\ given\ miles\r\n\ @param\r\n\ @return\ int\ miles\r\n
 comment4.params=mine
 comment4.target=java.lang.String\ isFuelTankEmptyTests(Car)
-comment4.text=\r\n\ Takes\ a\ car\ and\ adds\ given\ miles\r\n\ @param\r\n
+comment4.text=\r\n\ Tells\ you\ if\ the\ fuel\ tank\ is\ empty\r\n\ @param\ car\ mine\r\n\ @return\ string\ data\r\n
 numComments=5

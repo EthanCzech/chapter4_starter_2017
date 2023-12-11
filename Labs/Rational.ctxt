@@ -1,0 +1,30 @@
+#BlueJ class context
+comment0.target=Rational
+comment0.text=\r\n\ \ \ Ethan\ Czech\r\n\ \ \ \ 12/11\r\n\ \ \ \ Rational\ numbers\r\n\ \ \ \ Does\ math\ with\ rational\ numbers\r\n
+comment1.params=numer\ denom
+comment1.target=Rational(int,\ int)
+comment1.text=----------------------------------------------------------------\r\n\ \ Sets\ up\ the\ rational\ number\ by\ ensuring\ a\ nonzero\ denominator\r\n\ \ and\ making\ only\ the\ numerator\ signed.\r\n
+comment2.params=
+comment2.target=int\ getNumerator()
+comment2.text=----------------------------------------------------------------\r\n\ \ Returns\ the\ numerator\ of\ this\ rational\ number.\r\n
+comment3.params=
+comment3.target=int\ getDenominator()
+comment3.text=----------------------------------------------------------------\r\n\ \ Returns\ the\ denominator\ of\ this\ rational\ number.\r\n
+comment4.params=
+comment4.target=Rational\ reciprocal()
+comment4.text=----------------------------------------------------------------\r\n\ \ Returns\ the\ reciprocal\ of\ this\ rational\ number.\r\n
+comment5.params=op2
+comment5.target=Rational\ add(Rational)
+comment5.text=----------------------------------------------------------------\r\n\ \ Adds\ this\ rational\ number\ to\ the\ one\ passed\ as\ a\ parameter.\r\n\ \ A\ common\ denominator\ is\ found\ by\ multiplying\ the\ individual\r\n\ \ denominators.\r\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment7.params=op2
+comment7.target=Rational\ subtract(Rational)
+comment7.text=----------------------------------------------------------------\r\n\ \ Subtracts\ the\ rational\ number\ passed\ as\ a\ parameter\ from\ this\r\n\ \ rational\ number.\r\n
+comment8.params=
+comment8.target=void\ reduce()
+comment8.text=----------------------------------------------------------------\r\n\ \ Multiplies\ this\ rational\ number\ by\ the\ one\ passed\ as\ a\r\n\ \ parameter.\r\n\r\n\ \ \ public\ Rational\ multiply\ (Rational\ op2)\r\n\ \ \ {\r\n\r\n\ \ \ }\r\n\r\n\ \ \ /**----------------------------------------------------------------\r\n\ \ Divides\ this\ rational\ number\ by\ the\ one\ passed\ as\ a\ parameter\r\n\ \ by\ multiplying\ by\ the\ reciprocal\ of\ the\ second\ rational.\r\n\r\n\ \ \ public\ Rational\ divide\ (Rational\ op2)\r\n\ \ \ {\r\n\ \ \ }\r\n\r\n\ \ \ /**----------------------------------------------------------------\r\n\ \ Determines\ if\ this\ rational\ number\ is\ equal\ to\ the\ one\ passed\r\n\ \ as\ a\ parameter.\ \ Assumes\ they\ are\ both\ reduced.\r\n\r\n\ \ \ public\ boolean\ equals\ (Rational\ op2)\r\n\ \ \ {\r\n\r\n\ \ \ }\r\n\r\n\ \ \ /**----------------------------------------------------------------\r\n\ \ Returns\ this\ rational\ number\ as\ a\ string.\r\n\r\n\ \ \ public\ String\ toString\ ()\r\n\ \ \ {\r\n\ \ \ \ \ \ String\ result\ \=\ "";\r\n\r\n\r\n\ \ \ \ \ \ return\ result;\r\n\ \ \ }\r\n\r\n\ \ \ /**----------------------------------------------------------------\r\n\ \ Reduces\ this\ rational\ number\ by\ dividing\ both\ the\ numerator\r\n\ \ and\ the\ denominator\ by\ their\ greatest\ common\ divisor.\r\n
+comment9.params=num1\ num2
+comment9.target=int\ gcd(int,\ int)
+comment9.text=----------------------------------------------------------------\r\n\ \ Computes\ and\ returns\ the\ greatest\ common\ divisor\ of\ the\ two\r\n\ \ positive\ parameters.\ Uses\ Euclid's\ algorithm.\r\n
+numComments=10
