@@ -114,35 +114,43 @@ public class Rational
     int numerator2 = op2.numerator;
     
     int totalNumerator = numerator1 * numerator2;
-    return totalNumerator; 
+    int totalDenonimator = denominator1 * denominator2; 
+    Rational multiplied = new Rational(totalNumerator, totalDenominator);
+    return multiplied; 
    }
 
    /**----------------------------------------------------------------
    *  Divides this rational number by the one passed as a parameter
    *  by multiplying by the reciprocal of the second rational.
-   *
+   */
    public Rational divide (Rational op2)
-   {
+   {int denominator1 = denominator;
+    int denominator2 = op2.denominator;
+    int numerator1 = numerator;
+    int numerator2 = op2.numerator;
+    
+    double totalNumerator = (double) numerator1 / (double) numerator2;
+    double totalDenonimator = (double) denominator1 / (double) denominator2;
+    Rational divided = new Rational(totalNumerator, totalDenominator);
+    return divided; 
    }
 
    /**----------------------------------------------------------------
    *  Determines if this rational number is equal to the one passed
    *  as a parameter.  Assumes they are both reduced.
-   *
+   */
    public boolean equals (Rational op2)
-   {
+   {int denominator1 = denominator;
+    int denominator2 = op2.denominator;
+    int numerator1 = numerator;
+    int numerator2 = op2.numerator;
 
-   }
-
-   /**----------------------------------------------------------------
-   *  Returns this rational number as a string.
-   *
-   public String toString ()
-   {
-      String result = "";
-
-
-      return result;
+    Rational R1 = new Rational(numerator1, denominator1);
+    if (R1.equals(op2))
+        return true;
+    else
+        return false;
+    
    }
 
    /**----------------------------------------------------------------
