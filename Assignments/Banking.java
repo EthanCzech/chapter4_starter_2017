@@ -14,6 +14,7 @@ public class Banking
       Account acct1 = new Account ("Ted Murphy", 72354, 102.56);
       Account acct2 = new Account ("Anita Gomez", 69713, 40.00);
       Account acct3 = new Account ("Sanchit Reddy", 93757, 759.32);
+      Account acct4 = new Account ("Ethan Czech", 12345);
 
       acct1.deposit (25.85);
 
@@ -30,6 +31,8 @@ public class Banking
       acct2.addInterest();
       acct3.addInterest();
 
+      acct1.moneyToSwap(acct2);
+      
       System.out.println ();
       System.out.println (acct1);
       System.out.println (acct2);
