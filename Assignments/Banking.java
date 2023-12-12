@@ -31,7 +31,7 @@ public class Banking
       acct2.addInterest();
       acct3.addInterest();
 
-      acct1.moneyToSwap(acct2);
+      acct1.moneySwap(acct2);
       
       System.out.println ();
       System.out.println (acct1);
