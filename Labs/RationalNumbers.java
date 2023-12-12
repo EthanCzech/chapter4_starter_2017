@@ -26,7 +26,7 @@ public class RationalNumbers
          System.out.println ("r1 and r2 are NOT equal.");
 
       r3 = r1.reciprocal();
-      System.out.println ("The reciprocal of r1 is: " + r3)
+      System.out.println ("The reciprocal of r1 is: " + r3);
 
       r4 = r1.add(r2);
       r5 = r1.subtract(r2);

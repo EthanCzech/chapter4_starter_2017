@@ -115,7 +115,7 @@ public class Rational
     
     int totalNumerator = numerator1 * numerator2;
     int totalDenonimator = denominator1 * denominator2; 
-    Rational multiplied = new Rational(totalNumerator, totalDenominator);
+    Rational multiplied = new Rational(totalNumerator, totalDenonimator);
     return multiplied; 
    }
 
@@ -130,7 +130,7 @@ public class Rational
     int numerator2 = op2.numerator;
     
     double totalNumerator = (double) numerator1 / (double) numerator2;
-    double totalDenonimator = (double) denominator1 / (double) denominator2;
+    double totalDenominator = (double) denominator1 / (double) denominator2;
     Rational divided = new Rational(totalNumerator, totalDenominator);
     return divided; 
    }
