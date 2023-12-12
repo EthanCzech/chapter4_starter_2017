@@ -6,7 +6,7 @@
 //********************************************************************
 
 import java.text.NumberFormat;
-
+import java.util.Scanner;
 
 public class Account
 {
@@ -29,6 +29,19 @@ public class Account
       balance = initial;
    }
 
+
+   /**
+   * Sets up the account by defining its owner, account number,
+   *  and initial balance. Overloaded version of the account constructor
+   */
+   public Account (String owner, int account)
+   {
+      name = owner;
+      acctNumber = account;
+      balance = 0;
+   }
+
+
    /**
    *  Validates the transaction, then deposits the specified amount
    *  into the account. Returns the new balance.
@@ -44,6 +57,24 @@ public class Account
       else
          balance = balance + amount;
       return balance;
+   }
+
+
+   /**
+   *  Takes money from one account and deposits in another
+   *  
+   */
+   public void moneySwap (Account other)
+   { Scanner keyboard = new Scanner(System.in);
+     System.out.println("How much to you want to give to a different account")
+     int moneyToSwap = keyboard.nextInt();
+     if (moneyToSwap > 0)
+     {
+        balance -= moneyToSwap;
+        other.balance += moneyToSwap
+     }
+    else 
+	System.out.println("You have to input a positive amount of money to swap")
    }
 
    /**
