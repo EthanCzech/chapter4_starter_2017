@@ -66,7 +66,7 @@ public class Account
    */
    public void moneySwap (Account other)
    { Scanner keyboard = new Scanner(System.in);
-     System.out.println("How much to you want to give to a different account")
+     System.out.println("How much to you want to give to a different account");
      int moneyToSwap = keyboard.nextInt();
      if (moneyToSwap > 0)
      {
@@ -74,7 +74,7 @@ public class Account
         other.balance += moneyToSwap
      }
     else 
-	System.out.println("You have to input a positive amount of money to swap")
+	System.out.println("You have to input a positive amount of money to swap");
    }
 
    /**
@@ -130,18 +130,22 @@ public class Account
    /**
    *  Returns the current balance of the account.
    */
+   public int getBalance();
+	{return balance;}
 
 
    /**
    *  Returns the account number.
    */
-
+   public int getAcctNumber();
+	{return acctNumber;}
 
    /**
    *  Returns a one-line description of the account as a string.
    */
    public String toString ()
    {
-      return ("supply correct data");
+      data = " " + acctNumber + " " + balance + " " + name;
+      return data;
    }
 }
