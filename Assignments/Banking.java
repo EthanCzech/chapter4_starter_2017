@@ -33,7 +33,7 @@ public class Banking
 
       acct1.moneySwap(acct2);
       
-      System.out.println ();
+      System.out.println (acct4);
       System.out.println (acct1);
       System.out.println (acct2);
       System.out.println (acct3);
