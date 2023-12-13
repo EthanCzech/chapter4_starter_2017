@@ -1,4 +1,4 @@
-
+//This is not my actual rational numbers code. The actual version is in labs, as I didn't know there was a copy here to use. B=The Accounts/Banking program is here, sorry for any inconvience
 
 public class RationalNumbers
 {
