@@ -1,4 +1,7 @@
+//Rational Numbers and the Car program are here is Labs. I had to do Bankings/Accounts fully at home, so that is still in Assignments. Sorry for any inconvinience
 
+//Ethan Czech
+//12/12/23
 
 public class RationalNumbers
 {
