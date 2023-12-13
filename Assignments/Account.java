@@ -71,7 +71,7 @@ public class Account
      if (moneyToSwap > 0)
      {
         balance -= moneyToSwap;
-        other.balance += moneyToSwap
+        other.balance += moneyToSwap;
      }
     else 
 	System.out.println("You have to input a positive amount of money to swap");
